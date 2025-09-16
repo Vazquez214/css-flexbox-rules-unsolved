@@ -11,7 +11,10 @@ body {
 }
 
 .content {
-  padding: 30px;
+  display: flex;
+  padding: 25px;
+  gap: 35px;
+  justify-content: space-around;
 }
 
 h2 {
@@ -25,13 +28,17 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
-  border: 1px solid #a9a9a9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #a8a8a8;
   padding: 20px;
 }
 
 .subtext {
-  color: #a9a9a9;
-  font-weight: unset;
+  display: flex;
+  padding: 15px;
+  font-weight: unset; 
 }
 
 #sign-in,
@@ -58,14 +65,14 @@ input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
   height: max-content;
-  padding: 0;
+  padding: 0; 
 }
 
 input[type="submit"] {
   width: unset;
   height: unset;
   padding: 14px 20px;
-  background: #335eea;
+  background-color:  #335eea;
   color: white;
   font-size: 18px;
   border: 1px solid #335eea;
@@ -77,7 +84,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #294bbb;
+  background:  #294bbb;
 }
 
 .form select {
