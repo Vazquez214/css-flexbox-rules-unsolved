@@ -60,6 +60,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input {
@@ -89,6 +91,10 @@ section {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .option i {
@@ -146,6 +152,9 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
@@ -194,6 +203,7 @@ i.fa-th-list {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  width: 100px;
 }
 
 /* 👇👇👇  EDIT STYLES BENEATH  👇👇👇*/
@@ -225,6 +235,10 @@ i.fa-th-list {
 .grid .product-info {
   text-align: center;
   padding: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  margin-top: 30px;
 }
 
 .grid .product-action {
@@ -236,25 +250,28 @@ i.fa-th-list {
 
 .lines.products {
   display: flex;
-flex-direction: column;
-gap: 30px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines .product {
   padding: 20px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .lines .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  display: flex;
+  align-items: center;
 }
 
 .lines .product-data {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 .lines .product-info {
@@ -266,6 +283,7 @@ gap: 30px;
 
 .lines .product-action {
  justify-items: center;
+ padding-top: 10px;
 }
 
 /* LINES-ACTION VIEW */
@@ -303,4 +321,7 @@ align-items: center;
   border-left: 1px solid #706e7d;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
 }
